@@ -35,24 +35,6 @@ Elaborado por el Psic. Lorenzo Salomón Cárdenas para [SoftCualitativo](https:/
 
 El avance se guarda en el navegador de cada persona (localStorage). No se envía ningún dato a servidores.
 
-## Publicar en GitHub Pages
-
-1. Crea un repositorio y sube el contenido de esta carpeta tal cual, con `index.html` en la raíz.
-2. En el repositorio entra a Settings, luego Pages.
-3. En "Build and deployment" elige "Deploy from a branch", la rama `main` y la carpeta `/ (root)`.
-4. Guarda. En uno o dos minutos el curso queda disponible en `https://<usuario>.github.io/<repositorio>/`.
-
-El archivo `.nojekyll` evita que GitHub procese el sitio con Jekyll. El curso no necesita compilación ni dependencias, solo las fuentes de Google Fonts, y si no cargan se usan fuentes del sistema.
-
-## Añadir los videos
-
-Hay espacios de video en las misiones 0, 1, 6 y 12. Para llenarlos, abre `assets/js/missions.js`, busca los pasos con `type: "video"` y pega el enlace de YouTube en el campo `youtube`.
-
-```js
-{ type: "video", title: "Recorrido general por QInsights", youtube: "https://www.youtube.com/watch?v=XXXXXXXXXXX" }
-```
-
-Acepta enlaces de `youtube.com/watch`, `youtu.be`, `shorts` o solo el identificador de 11 caracteres. El video se inserta con `youtube-nocookie.com`. Para añadir un video en otra misión, copia ese paso dentro de su lista `steps`.
 
 ## Estructura de archivos
 
